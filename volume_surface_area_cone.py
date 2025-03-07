@@ -30,7 +30,7 @@ def main():
     unit = input("Enter the unit of measurement (e.g., cm, m, inches): ")
 
     # Process: Calculate the volume and surface area
-    volume = (1 / 3) * math.pi * (radius**2) * height
+    volume = (1 / 3) * math.pi * (radius **2 ) * height
     surface_area = math.pi * radius * (radius + height)
 
     # Output: Show rounded results with units
