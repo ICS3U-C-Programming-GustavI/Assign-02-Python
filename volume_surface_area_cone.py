@@ -8,9 +8,7 @@ import math
 
 def main():
     # Input: Ask the user for radius, height, and unit
-    print(
-        "Welcome to the Cone Surface Area and Volume calculator! ☺ Please insert your desired values."
-    )
+    print("Welcome to the Cone Surface Area and Volume calculator. Please insert your desired values.")
 
     radius = input("Enter the radius of the cone: ")
     height = input("Enter the height of the cone: ")
@@ -29,9 +27,9 @@ def main():
 
     unit = input("Enter the unit of measurement (e.g., cm, m, inches): ")
 
-    # Process: Calculate the volume and surface area
+    # Process: Calculate the volume and **corrected** surface area
     volume = (1 / 3) * math.pi * (radius ** 2) * height
-    surface_area = math.pi * radius * (radius + height)
+    surface_area = math.pi * radius * (radius + math.sqrt(height ** 2 + radius ** 2))
 
     # Output: Show rounded results with units
     print("\n--- Cone Measurements ---")
