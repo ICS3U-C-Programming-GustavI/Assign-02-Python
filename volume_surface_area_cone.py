@@ -9,7 +9,7 @@ import math
 def main():
     # Input: Ask the user for radius, height, and unit
     print(
-        "Welcome to the Cone Surface Area and Volume calculator.☺ Please insert your desired values."
+        "Welcome to the Cone Surface Area and Volume calculator. Please insert your desired values."
     )
 
     radius = input("Enter the radius of the cone: ")
